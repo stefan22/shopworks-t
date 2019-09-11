@@ -65,48 +65,32 @@ class QuestionsForm extends Component {
 
         {
           !!questions &&
-          <List
-            item={TitleComp}
-            items={questions}
-          />
-        }
 
-        {
-          !!questions &&
+          <>
+            <List
+              item={TitleComp}
+              items={questions}
+            />
             <List
               item={TitleTextComp}
               items={questions}
               handleChange={this.handleChange}
             />
-
-        }
-
-        {
-          !!questions &&
-          <List
-            item={SubtitleComp}
-            items={questions}
-          />
-        }
-
-
-        {
-          !!questions &&
-          <List
-            item={SubtitleTextComp}
-            items={questions}
-            handleChange={this.handleChange}
-          />
-
-        }
-
-        {
-          !!questions &&
-          <List
-            item={SubtitleSelectComp}
-            items={questions}
-            handleChange={this.handleChange}
-          />
+            <List
+              item={SubtitleComp}
+              items={questions}
+            />
+            <List
+              item={SubtitleTextComp}
+              items={questions}
+              handleChange={this.handleChange}
+            />
+            <List
+              item={SubtitleSelectComp}
+              items={questions}
+              handleChange={this.handleChange}
+            />
+          </>
 
         }
 
