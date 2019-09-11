@@ -1,26 +1,22 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 
-class List extends Component {
-  render() {
-    const {items, item: Item} = this.props
+const List = ({items,item: Item,handleChange}) => (
 
-    return (
-      <>
-        {
-          items.map((itm,idx) =>
-            <Item
-              key={idx}
-              seckey={idx}
-              {...itm}
-              handleChange={this.props.handleChange}
-            />
-          )
-        }
-      </>
-    )
-  }
-}
+    <>
+      {
+        items.map((itm,idx) =>
+          <Item
+            key={idx}
+            seckey={idx}
+            {...itm}
+            handleChange={handleChange}
+          />
+        )
+      }
+    </>
+
+)
 
 
 export default List
