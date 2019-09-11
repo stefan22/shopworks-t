@@ -2,7 +2,7 @@ import React from 'react'
 import {TextField,SelectField,Label} from '../../Styles/Styled'
 
 
-const SubtitleSelectComp = ({seckey,fields,handleChange}) => (
+const SubtitleSelectComp = ({seckey,fields,onChange}) => (
 
       <>
           {
@@ -23,7 +23,7 @@ const SubtitleSelectComp = ({seckey,fields,handleChange}) => (
                     type='dropdown'
                     name={itm.name}
                     id={itm.name}
-                    onChange={(e) => handleChange(e.target.value,itm)}
+                    onChange={(e) => onChange(e.target.value,itm)}
                   >
                     {
                       itm.options.map(option =>

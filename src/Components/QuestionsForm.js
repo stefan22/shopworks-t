@@ -74,7 +74,7 @@ class QuestionsForm extends Component {
             <List
               item={TitleTextComp}
               items={questions}
-              handleChange={this.handleChange}
+              onChange={this.handleChange}
             />
             <List
               item={SubtitleComp}
@@ -83,12 +83,12 @@ class QuestionsForm extends Component {
             <List
               item={SubtitleTextComp}
               items={questions}
-              handleChange={this.handleChange}
+              onChange={this.handleChange}
             />
             <List
               item={SubtitleSelectComp}
               items={questions}
-              handleChange={this.handleChange}
+              onChange={this.handleChange}
             />
           </>
 

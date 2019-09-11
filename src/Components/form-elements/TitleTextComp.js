@@ -2,7 +2,7 @@ import React from 'react'
 import {InputStyled,TextField,Label} from '../../Styles/Styled'
 
 
-const TitleTextComp = ({seckey,value,fields,handleChange}) => (
+const TitleTextComp = ({seckey,value,fields,onChange}) => (
 
       <>
           {
@@ -22,7 +22,7 @@ const TitleTextComp = ({seckey,value,fields,handleChange}) => (
                     value={value}
                     //first name required
                     required={(idx === 0) ? true : false}
-                    onChange={(e) => handleChange(e.target.value,itm)}
+                    onChange={(e) => onChange(e.target.value,itm)}
 
                   />
                 </TextField>

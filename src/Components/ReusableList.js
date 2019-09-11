@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const List = ({items,item: Item,handleChange}) => (
+const List = ({items,item: Item,onChange}) => (
 
     <>
       {
@@ -10,7 +10,7 @@ const List = ({items,item: Item,handleChange}) => (
             key={idx}
             seckey={idx}
             {...itm}
-            handleChange={handleChange}
+            onChange={onChange}
           />
         )
       }
