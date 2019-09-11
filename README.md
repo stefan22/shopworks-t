@@ -49,4 +49,17 @@
  ![react-form](src/images/react-form.png)
 
 
+ <br/>
+
+> added fields to form in json file
+
+ ![react-form](src/images/added-fields-to-form.png)
+
+
+<br/>
+> new fields response
+
+ ![sample-reponse](src/images/form-data.png)
+
+
 :100:

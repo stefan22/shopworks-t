@@ -24,8 +24,8 @@
           "type": "text"
         },
         {
-          "name": "extra_field",
-          "label": "Extra Field",
+          "name": "nearest_tesco",
+          "label": "Nearest Tesco",
           "type": "text"
         }
       ]
@@ -46,13 +46,19 @@
           "type": "text"
         },
         {
+          "name": "nearest_macdonalds",
+          "label": "Nearest MacDonalds",
+          "type": "text"
+        },
+        {
           "name": "country",
           "label": "Country",
           "type": "dropdown",
           "options": [
             "Select...",
             "Canada",
-            "USA"
+            "USA",
+            "Bahamas"
           ]
         }
       ]
