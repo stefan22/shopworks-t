@@ -1,23 +1,14 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {InputStyled,TextField,Label} from '../../Styles/Styled'
 
 
-class SubtitleTextComp extends Component {
+const SubtitleTextComp = ({seckey,value,fields,handleChange}) => (
 
-  handleChange(val,itm) {
-    this.props.handleChange(val,itm)
-  }
-
-  render() {
-
-    const {seckey,value} = this.props
-
-    return(
       <>
           {
             seckey === 1 &&
 
-            this.props.fields.map(itm =>
+            fields.map(itm =>
 
               (itm.type === 'text') ?
 
@@ -32,8 +23,7 @@ class SubtitleTextComp extends Component {
                     type='text'
                     name={itm.name}
                     value={value}
-                    onChange={(e) => this.handleChange(e.target.value,itm)}
-
+                    onChange={(e) => handleChange(e.target.value,itm)}
                   />
                 </TextField>
 
@@ -41,10 +31,8 @@ class SubtitleTextComp extends Component {
             )
           }
       </>
-    )
-  }
 
+)
 
-}
 
 export default SubtitleTextComp

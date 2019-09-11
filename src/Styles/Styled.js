@@ -10,6 +10,7 @@ export const Main = styled.div`
 
 export const Header = styled.header`
   max-width: 800px;
+  padding: 2rem 0;
   width: 100%;
   margin: 0 auto;
 	align-items: center;

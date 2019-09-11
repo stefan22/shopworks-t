@@ -1,21 +1,13 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {TextField,SelectField,Label} from '../../Styles/Styled'
 
 
-class SubtitleSelectComp extends Component {
+const SubtitleSelectComp = ({seckey,fields,handleChange}) => (
 
-  handleChange(val,itm) {
-    this.props.handleChange(val,itm)
-  }
-
-  render() {
-    const {seckey} = this.props
-
-    return(
       <>
           {
             seckey === 1 &&
-            this.props.fields.map(itm =>
+            fields.map(itm =>
 
               (itm.type === 'dropdown') ?
 
@@ -31,7 +23,7 @@ class SubtitleSelectComp extends Component {
                     type='dropdown'
                     name={itm.name}
                     id={itm.name}
-                    onChange={(e) => this.handleChange(e.target.value,itm)}
+                    onChange={(e) => handleChange(e.target.value,itm)}
                   >
                     {
                       itm.options.map(option =>
@@ -53,10 +45,6 @@ class SubtitleSelectComp extends Component {
           }
       </>
 
-    )
-  }
-
-
-}
+)
 
 export default SubtitleSelectComp

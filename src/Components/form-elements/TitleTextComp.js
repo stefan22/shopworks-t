@@ -1,21 +1,13 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {InputStyled,TextField,Label} from '../../Styles/Styled'
 
 
-class TitleTextComp extends Component {
+const TitleTextComp = ({seckey,value,fields,handleChange}) => (
 
-  handleChange(val,itm) {
-    this.props.handleChange(val,itm)
-  }
-
-  render() {
-    const {seckey,value} = this.props
-
-    return(
       <>
           {
             seckey === 0 &&
-            this.props.fields.map((itm,idx) =>
+            fields.map((itm,idx) =>
               (itm.type) === 'text' ?
                 <TextField key={itm.name}
                 >
@@ -30,7 +22,7 @@ class TitleTextComp extends Component {
                     value={value}
                     //first name required
                     required={(idx === 0) ? true : false}
-                    onChange={(e) => this.handleChange(e.target.value,itm)}
+                    onChange={(e) => handleChange(e.target.value,itm)}
 
                   />
                 </TextField>
@@ -38,10 +30,7 @@ class TitleTextComp extends Component {
             )
           }
       </>
-    )
-  }
 
-
-}
+)
 
 export default TitleTextComp
