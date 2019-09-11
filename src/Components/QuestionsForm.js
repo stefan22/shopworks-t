@@ -44,7 +44,7 @@ class QuestionsForm extends Component {
       this.setState({
         [name]: val,
       })
-    } else {
+    } else if(type === 'dropdown') {
       this.setState({
         [name]: val,
       })
