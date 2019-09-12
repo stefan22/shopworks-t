@@ -2,7 +2,7 @@ import React from 'react'
 import {InputStyled,TextField,Label} from '../../Styles/Styled'
 
 
-const SubtitleTextComp = ({seckey,value,fields,onChange}) => (
+const SubtitleTextComp = ({seckey,fields,onChange}) => (
 
       <>
           {
@@ -22,8 +22,7 @@ const SubtitleTextComp = ({seckey,value,fields,onChange}) => (
                   <InputStyled
                     type='text'
                     name={itm.name}
-                    value={value}
-                    onChange={(e) => onChange(e.target.value,itm)}
+                    onChange={onChange}
                   />
                 </TextField>
 

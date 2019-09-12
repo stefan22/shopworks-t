@@ -14,15 +14,7 @@ class QuestionsForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      first_name: '',
-      last_name: '',
-      country: '',
-      email: '',
-      phone_number: '',
-      street_address: '',
-      post_code: '',
       questions: [],
-
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -38,15 +30,15 @@ class QuestionsForm extends Component {
       })
   }
 
-  handleChange(val,obj) {
-    const {type,name} = obj
+  handleChange(e) {
+    const {type,name,value} = e.target
     if(type === 'text') {
       this.setState({
-        [name]: val,
+        [name]: value,
       })
-    } else if(type === 'dropdown') {
+    } else if(type === 'select-one') {
       this.setState({
-        [name]: val,
+        [name]: value,
       })
     }
   }
@@ -70,6 +62,7 @@ class QuestionsForm extends Component {
             <List
               item={TitleComp}
               items={questions}
+
             />
             <List
               item={TitleTextComp}
@@ -89,6 +82,7 @@ class QuestionsForm extends Component {
               item={SubtitleSelectComp}
               items={questions}
               onChange={this.handleChange}
+
             />
           </>
 

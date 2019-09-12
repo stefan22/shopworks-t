@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components'
-
+import styled from 'styled-components'
 
 
 export const Main = styled.div`

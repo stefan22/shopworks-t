@@ -2,7 +2,7 @@ import React from 'react'
 import {H3} from '../../Styles/Styled'
 
 
-const SubtitleComp = ({title,seckey}) => (
+const SubtitleComp = ({seckey,title}) => (
 
       <>
         {

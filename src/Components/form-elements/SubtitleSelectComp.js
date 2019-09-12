@@ -23,12 +23,11 @@ const SubtitleSelectComp = ({seckey,fields,onChange}) => (
                     type='dropdown'
                     name={itm.name}
                     id={itm.name}
-                    onChange={(e) => onChange(e.target.value,itm)}
+                    onChange={onChange}
                   >
                     {
                       itm.options.map(option =>
                         <option
-                          value={option}
                           key={option}
                         >
                           {option}
