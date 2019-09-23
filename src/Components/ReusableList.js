@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const List = ({items,item: Item,onChange}) => (
+const List = ({items,item: Item,onChange,value}) => (
 
     <>
       {
@@ -11,6 +11,7 @@ const List = ({items,item: Item,onChange}) => (
             seckey={idx}
             {...itm}
             onChange={onChange}
+            value={value}
           />
         )
       }

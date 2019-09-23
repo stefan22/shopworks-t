@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const Main = styled.div`
 	max-width: 800px;
   width: 100%;
@@ -39,7 +38,6 @@ export const Form = styled.form`
   padding: 1rem 3rem;
   border-radius: 4px;
   border: 1px solid #fafafa;
-
 `
 
 export const H1 = styled.h1`
@@ -65,7 +63,7 @@ export const H3 = styled.h3`
   margin-bottom: 2rem;
 `
 
-export const TextField = styled.div`
+export const TextInput = styled.div`
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -75,7 +73,6 @@ export const TextField = styled.div`
   &+&+&+& {
     margin-bottom: 2.5rem;
   }
-
 `
 
 export const InputStyled = styled.input`
@@ -105,7 +102,6 @@ export const ButtonWrap = styled.div`
       width: 100%;
       padding: 10px 20px;
     }
-
   }
   button:hover {
     background-color: #03A9F4;
@@ -132,7 +128,7 @@ export const StyledButton = styled.button`
   }
 `
 
-export const SelectField = styled.select`
+export const SelectInput = styled.select`
   font-size: 1rem;
   width: 150px;
   &:hover,&:focus {
@@ -151,7 +147,4 @@ export const Label = styled.label`
   font-size: 1rem;
   width: 150px;
   line-height: 38px;
-
 `
-
-
