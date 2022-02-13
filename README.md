@@ -1,3 +1,5 @@
+[![DeepScan grade](https://deepscan.io/api/teams/16862/projects/20171/branches/542348/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16862&pid=20171&bid=542348)
+
 ## React Form &nbsp; &nbsp; :violin:
 
 > bootstrapped with `Create-react-app`
