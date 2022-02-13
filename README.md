@@ -1,49 +1,27 @@
-[![DeepScan grade](https://deepscan.io/api/teams/16862/projects/20171/branches/542348/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16862&pid=20171&bid=542348)
+[![DeepScan grade](https://deepscan.io/api/teams/16862/projects/20171/branches/542348/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16862&pid=20171&bid=542348) &nbsp; [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/shopworks-t.git)
 
-## React Form &nbsp; &nbsp; :violin:
+## React Form Challenge &nbsp; &nbsp; :violin:
 
 > bootstrapped with `Create-react-app`
 
 ### To install
-- `npm install` dependencies
-- `npm start`
-- open browser http://localhost:3000
+
+  - `npm install` dependencies
+  - `npm start`
+  - open browser http://localhost:3000
 
 
-<br/>
+### About Form 💊
 
-### Notes
----------
-
-#### About Form :form:
-- Two Sections
-- `questions.json` is config file.  Add additional questions/fields here.
-- `Submit` button prints the form\'s current state to the console (form data).
-- `React` & `Styled` Comp css
+  - `questions.json` is config file.  Add additional questions/fields here.
+  - `Submit` button prints the form\'s current state to the console (form data).
+  - `React` & `Styled` Comp css
 
 
-<br/>
 
-• _The output should look similar to the below_:
+### Sample JSON output 🗃️
 
-
-```
-  firstName: "Lana",
-  lastName: "Kane",
-  country: "Canada",
-  email: "lana@example.com",
-  phoneNumber: "555-123-1111",
-  postCode: "V6B 1S5",
-  streetAddress: "123 Evergreen Drive"
-```
-
-
- > ___Similar___ - having a resemblance in appearance, character, or quantity, without being identical          - (under_score/camelCase)
-
-
-<br/>
-
- ![sample-reponse](src/images/sample-response.png)
+ <img src="src/images/sample-response.png" alt="Sample response" width="950" height="auto">
 
 <br/>
 
@@ -53,16 +31,16 @@
 
  <br/>
 
-> added fields to form in json file
+<kbd>Form with Custom fields</kbd>
 
  ![react-form](src/images/added-fields-to-form.png)
 
 
 <br/>
 
-> new fields response
-
- ![sample-reponse](src/images/form-data.png)
+<kbd>New JSON Response data - it includes data for new fields</kbd>
+ 
+ <img src="src/images/form-data.png" alt="New sample response" width="950" height="auto">
 
 
 :100:
