@@ -10,15 +10,10 @@ import CheckField from './form-elements/CheckField'
 
 class QuestionsForm extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       questions: [],
     }
-    this.handleChange = this.handleChange.bind(this)
-    this.handleOnBlur = this.handleOnBlur.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
-    this.fetchFormData = this.fetchFormData.bind(this)
-
   }
 
   componentDidMount() {
