@@ -2,33 +2,47 @@
 
 ## React Form Challenge &nbsp; &nbsp; :violin:
 
-> bootstrapped with `Create-react-app`
-
-### To install
-
-  - `npm install` dependencies
-  - `npm start`
-  - open browser http://localhost:3000
+<kbd><code color="red">bootstrapped with `Create-react-app`</code></kbd>
 
 
-### About Form 💊
 
-  - `questions.json` is config file.  Add additional questions/fields here.
-  - `Submit` button prints the form\'s current state to the console (form data).
-  - `React` & `Styled` Comp css
+<h2 align="center">Install</h2>
 
+```bash
+ • npm install dependencies
+ • npm start
+ • open browser http://localhost:3000
+```
+
+
+
+<h3 align="left">About Form 💊</h3>
+
+```bash
+• questions.json is config file.  Add additional questions/fields here.
+• Submit` button prints the form\'s current state to the console (form data).
+• React & Styled Comp css
+
+```
 
 
 ### Sample JSON output 🗃️
 
- <img src="src/images/sample-response.png" alt="Sample response" width="950" height="auto">
+
+ <img src="src/images/sample-response.png" alt="Sample response" width="950" height="auto" mixed-blend-mode="difference">
+
 
 <br/>
 
 
- <kbd>Form</kbd>
- 
+
+
+<kbd>___Form___</kbd>
+
+
+
  <img src="src/images/react-form.png" width="900" alt="React form">
+
 
 
 <kbd>Form with Custom fields</kbd>
