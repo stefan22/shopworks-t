@@ -26,14 +26,15 @@
 <br/>
 
 
- ![react-form](src/images/react-form.png)
+ 
+ <img src="src/images/react-form.png" width="900" alt="React form">
 
-
- <br/>
 
 <kbd>Form with Custom fields</kbd>
 
- ![react-form](src/images/added-fields-to-form.png)
+
+ 
+ <img src="src/images/added-fields-to-form.png" width="900" alt="Updated form">
 
 
 <br/>
